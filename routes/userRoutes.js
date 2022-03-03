@@ -2,12 +2,11 @@ const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 const Joi = require("@hapi/joi");
-require("dotenv").config();
+require("dotenv").config();   
 const secret = process.env.secret;
 const UserModel = require("../model/user");
-
+//fu
 const schema = Joi.object({
   name: Joi.string().min(6).required(),
   email: Joi.string().min(6).required().email(),

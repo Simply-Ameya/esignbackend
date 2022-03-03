@@ -6,7 +6,7 @@ const { urlencoded } = require("express");
 const bodyparser = require("body-parser");
 
 const userRoute = require("./routes/userRoutes");
-
+//package
 const app = express();
 
 app.use(bodyparser.urlencoded({ extended: true }));
